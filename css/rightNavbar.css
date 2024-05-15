@@ -1,0 +1,66 @@
+.aside {
+  background-color: #101721;
+  width: 250px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  font-family: "FuturaCyrillicBook", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 0; /* Убедитесь, что z-index установлен в 0 */
+}
+
+.aside p.aside_text {
+  color: #7d7f82;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.parent3 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.div13, .div23, .div33, .div43, .div53, .div63, .div73, .div83 {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.div13:hover, .div23:hover, .div33:hover, .div43:hover, .div53:hover, .div63:hover, .div73:hover, .div83:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logo_circle_3 {
+  background-color: #7d7f82;
+  border-radius: 50%;
+  box-shadow: 0.275em 0.275em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+  margin-right: 10px;
+}
+
+.parentr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.div223, .div323 {
+  color: #7d7f82;
+  font-size: 14px;
+  flex: 1;
+}

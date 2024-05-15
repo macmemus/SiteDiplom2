@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "FuturaCyrillicBook";
+  src: url("FuturaCyrillicBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensure no scrollbars */
+  font-family: "FuturaCyrillicBook", sans-serif;
+  background-color: #f9f9f9;
+}
+
+canvas {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+main {
+  margin-left: 75px;
+  margin-right: 250px; /* Добавлено для rightbar */
+  width: calc(100% - 75px - 250px);
+  overflow: hidden;
+}
+
+/* Основной контейнер */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* три колонки */
+  grid-gap: 20px; /* промежуток между элементами */
+  padding: 20px; /* отступы вокруг контейнера */
+  margin: 20px; /* отступы от краев страницы */
+}
+
+/* Блоки внутри основного контейнера */
+.div1, .div2, .div3, .div4, .div5, .div6 {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  padding: 20px; /* внутренние отступы */
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjusting navigation bar to be less obtrusive */
+.nav {
+  width: 45px; /* Keep your nav bar slim */
+  position: fixed; /* Fixed position to stay on scroll */
+  height: 100%;
+  left: 0; /* Align to the left edge */
+  top: 0; /* Align to the top edge */
+  background-color: #101721;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_grid {
+  display: flex;
+  align-items: center;
+}
+
+.logo_circle {
+  border-radius: 50%;
+  box-shadow: 0.275em 0.275em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.name {
+  margin-top: 18px;
+  margin-left: 20px;
+  color: #2f2222;
+  font-size: 24px;
+}
+
+.description {
+  margin-left: 20px;
+  font-size: 12px;
+  margin-top: -15px;
+  color: #7d7f82;
+}
+
+.logo_circle_b {
+  background-color: #454e88;
+  border-radius: 50%;
+  box-shadow: 0.275em 0.275em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.logo_circle_g {
+  background-color: #26b5b5;
+  border-radius: 50%;
+  box-shadow: 0.275em 0.275em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.logo_circle_p {
+  background-color: #d93296;
+  border-radius: 50%;
+  box-shadow: 0.275em 0.275em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.logo_circle_gr {
+  background-color: #27a82b;
+  border-radius: 50%;
+  box-shadow: 0.275em 0.275em 0 0 rgba(15, 28, 63, 0.125);
+  height: 2em;
+  width: 2em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.empty_container {
+  height: 200px;
+}
+
+/* Контейнер для дополнительных блоков */
+.parent2 {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div12, .div22, .div32, .div42 {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-bottom: 20px; /* Добавленное свойство */
+}
+
+.div12:hover, .div22:hover, .div32:hover, .div42:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.div12 h3, .div22 h3, .div32 h3, .div42 h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.div12 p, .div22 p, .div32 p, .div42 p {
+  color: #666;
+}
+/* Уменьшение ширины правого бокового бара */
+.aside {
+  width: 200px; /* уменьшенная ширина */
+}
+
+/* Отступы между основным содержимым и боковыми барами */
+main {
+  margin-left: 65px; /* отступ от левого бара */
+  margin-right: 220px; /* отступ от правого бара */
+} 
+
+.name2 {
+  margin-top: 18px;
+  margin-left: 20px;
+  color: black;
+  font-weight: 600;
+}

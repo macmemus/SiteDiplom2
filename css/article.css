@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "FuturaCyrillicBook";
+    src: url("FuturaCyrillicBook.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "FuturaCyrillicBook", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #101721;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo_img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  header .title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Максимальная ширина для удобного чтения */
+  }
+  
+  article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  article h2, article h3 {
+    color: #454e88;
+  }
+  
+  article p {
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+  
+  footer {
+    background-color: #101721;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }  

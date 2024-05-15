@@ -1,0 +1,82 @@
+.nav {
+  background-color: #101721;
+  width: 45px;
+  min-height: 100vh; /* Changed from 198vh to 100vh */
+  display: flex;
+  justify-content: flex-start; /* Changed from center to flex-start */
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Add padding to top */
+}
+
+.logo {
+  background-color: #454e88;
+  border-radius: 5px;
+  width: 27px;
+  height: 27px;
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+.logo_img {
+  width: 25px;
+  height: 25px;
+}
+
+.img_nav {
+  width: 27px;
+  height: 27px;
+  margin-top: 20px; /* Adjusted margin */
+  background-color: #454e88;
+  border-radius: 5px;
+}
+
+.main_img {
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+.faq {
+  width: 25px;
+  height: 27px;
+  background-color: #454e88;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 40px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 110%; /* Позиционирование справа от изображения */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* Позиционирование справа */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
